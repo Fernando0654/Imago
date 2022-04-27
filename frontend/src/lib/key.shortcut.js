@@ -9,16 +9,16 @@ const UseKeypress = (keys, callback, node) => {
     });
 
     const handleKeypressed = useCallback((evento) => {
-        if(keys[0] === evento.key && evento.ctrKey === true) {
+        if(keys[0] === evento.key && evento.ctrlKey === true) {
             document.querySelector("input").click();
         }
-        if(keys[1] === evento.key && evento.ctrKey === true) {
+        if(keys[1] === evento.key && evento.ctrlKey === true) {
             document.querySelector(".switcher").click();
         }
-        if(keys[2] === evento.key && evento.ctrKey === true) {
+        if(keys[2] === evento.key && evento.ctrlKey === true) {
             document.querySelector(".change-lang_box").click();
         }
-        if(keys[3] === evento.key && evento.ctrKey === true && evento.altKey === true) {
+        if(keys[3] === evento.key && evento.ctrlKey === true && evento.altKey === true) {
             document.querySelector(".ident").click();
         }
     }, [keys]);

@@ -28,7 +28,7 @@ const App = () => {
 
     const shortcuts = ["x", "z", "y", "s"];
 
-    UseKeypress(shortcuts);
+    UseKeypress(shortcuts, UseKeypress);
 
     const loadModel = async () => {
         setIsModelLoading(true);
