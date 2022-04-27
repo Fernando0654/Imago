@@ -1,0 +1,52 @@
+{
+  "name": "react_imgcl",
+  "version": "1.0.0",
+  "private": true,
+  "proxy": "http://localhost:5000",
+  "description": "Clasificador de imágenes",
+  "main": "index.js",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "dev": "webpack serve --open --config webpack.config.js --mode development",
+    "build": "webpack --mode production --config webpack.config.js"
+  },
+  "author": "FernandoFeN",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow-models/mobilenet": "^2.1.0",
+    "@tensorflow/tfjs-backend-webgl": "^3.13.0",
+    "@tensorflow/tfjs-core": "^3.13.0",
+    "axios": "^0.25.0",
+    "cloudinary-react": "^1.7.1",
+    "pusher-js": "^7.0.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-file-base64": "^1.0.3",
+    "react-hot-toast": "^2.2.0",
+    "react-icons": "^4.3.1",
+    "react-intl": "^5.24.4",
+    "react-redux": "^7.2.6",
+    "react-tsparticles": "^1.41.0",
+    "redux": "^4.1.2",
+    "redux-thunk": "^2.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^6.4.0",
+    "dotenv": "^16.0.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.2",
+    "redux-devtools-extension": "^2.13.9",
+    "sass": "^1.42.1",
+    "sass-loader": "^12.2.0",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.58.1",
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.3.1"
+  }
+}

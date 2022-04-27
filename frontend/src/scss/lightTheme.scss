@@ -1,0 +1,75 @@
+@use "./util/colors" as color;
+
+.light {
+    // General area
+    background-color: #fff;
+    .no-result span {
+        color: color.$main_light_color;
+    }
+    .icon {
+        color: color.$main_light_color;
+    }
+    .logo.dark {
+        display: none;
+    }
+    .logo.light {
+        display: block;
+    }
+    // Img Area
+    .img_area {
+        .input_img .controls_wrapper button {
+            &.allowed {
+                color: color.$main_light_color;
+                border: 1px solid color.$main_light_color;
+                &:hover {
+                    color: #100c4f;
+                }
+            }
+        }
+    }
+    // Configuration Area
+    .config_area {
+        h2 {
+            color: #fff;
+            background-color: color.$main_light_color;
+        }
+        .config {
+            .switcher_box .switcher {
+                border: 1px solid color.$main_light_color;
+                .circle {
+                    background-color: color.$main_light_color;
+                }
+            }
+            .change-lang_box .lang span {
+                color: color.$main_light_color;
+                &.active {
+                    color: #fff;
+                    background-color: color.$main_light_color;
+                }
+            }
+            .voice-active {
+                background-color: color.$main_light_color;
+                border: none;
+                color: #fff;
+            }
+        }
+    }
+    // Results Area
+    .results_area {
+        h2 {
+            color: #fff;
+            background-color: color.$main_light_color;
+        }
+    }
+    // History Area
+    .history_area {
+        h4 {
+            background-color: color.$main_light_color;
+        }
+        .container_history {
+            .title, .subtitle {
+                background-color: color.$main_light_color;
+            }
+        }
+    }
+}

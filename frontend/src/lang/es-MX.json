@@ -1,0 +1,9 @@
+{
+    "main.title": "Clasificador de Imágenes",
+    "main.results": "Resultados",
+    "main.noResults": "Identifica tu primera imagen",
+    "main.identifyBtn": "Identificar imagen",
+    "main.history": "Historial",
+    "main.noHistory": "No se encontró historial",
+    "main.reliability": "Seguridad de predicción"
+}

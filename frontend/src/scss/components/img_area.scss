@@ -1,0 +1,69 @@
+@use "../util/colors" as color;
+@use "../util/mixins" as mix;
+
+.img_area {
+    z-index: 300;
+    .logo {
+        width: clamp(100px, 80%, 200px);
+        margin-bottom: 3em;
+    }
+    .input_img {
+        @include mix.flex(column, center, center);
+        .img_preview {
+            width: clamp(100px, 70vw, 400px);
+            height: clamp(100px, 40vw, 300px);
+            margin: auto;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+            transition: 500ms ease;
+            input[type="file"] {
+                appearance: none;
+                opacity: 0;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                cursor: pointer;
+            }
+            &.withFile {
+                border: none;
+            }
+            &.notFile {
+                border: 1px dashed rgb(49, 47, 47);
+            }
+            &:hover {
+                border: 1px solid rgb(128, 117, 117);
+            }
+        }
+        .controls_wrapper {
+            @include mix.flex(row, center, center);
+            width: 100%;
+            button {
+                width: 80%;
+                max-width: 300px;
+                min-width: 100px;
+                font-family: "Bebas Neue", cursive;
+                padding: 0.5em;
+                background-color: transparent;
+                font-size: clamp(0.8rem, 2vw, 1.5rem);
+                margin-top: 2em;
+                border-radius: 10px;
+                &.allowed {
+                    color: color.$main_color;
+                    border: 1px solid color.$main_color;
+                    cursor: pointer;
+                    &:hover {
+                        color: #d0ff00;
+                    }
+                }
+                &.forbidden {
+                    color: color.$soft_text;
+                    border: 1px solid color.$soft_text;
+                    opacity: 0.7;
+                    cursor: not-allowed;
+                }
+            }
+        }
+    }
+}

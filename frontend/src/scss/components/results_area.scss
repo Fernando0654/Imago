@@ -1,0 +1,30 @@
+@use "../util/colors" as color;
+@use "../util/mixins" as mix;
+
+.results_area {
+    display: flex;
+    flex-direction: column;
+    h2 {
+        color: #fff;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 2px;
+        font-weight: lighter;
+        text-align: center;
+        background-color: color.$main_color;
+        padding: 0.6em;
+        border-radius: 8px;
+    }
+    .box_result {
+        @include mix.flex(column, center, center);
+        h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: clamp(0.8rem, 1vw, 1.1rem);
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.837);
+            padding: 1em;
+            border-radius: 4px;
+            margin: 0.2em;
+            text-align: center;
+        }
+    }
+}

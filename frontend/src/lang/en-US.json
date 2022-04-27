@@ -1,0 +1,9 @@
+{
+    "main.title": "Image Sorter",
+    "main.results": "Results",
+    "main.noResults": "Identify your first image",
+    "main.identifyBtn": "Identify image",
+    "main.history": "History",
+    "main.noHistory": "No history found",
+    "main.reliability": "Predictive reliability"
+}

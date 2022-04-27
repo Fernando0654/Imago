@@ -1,0 +1,126 @@
+@forward "./util/animations";
+@use "./util/mixins" as mix;
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #0c0c0c;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    @include mix.flex(column, center, center);
+    padding-top: 3em;
+    padding-bottom: 3em;
+    transition: 500ms ease;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    // grid-template-rows: 1fr 1fr 1fr;
+    gap: 2em 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "img_area config_area"
+        "img_area results_area"
+        "history_area history_area";
+    width: 95%;
+    max-width: 1000px;
+    margin-bottom: 3em;
+    transition: 1s ease-in;
+}
+
+.img_area {
+    grid-area: img_area;
+}
+
+.config_area {
+    grid-area: config_area;
+}
+
+.results_area {
+    grid-area: results_area;
+}
+
+.history_area {
+    grid-area: history_area;
+}
+
+.no-result {
+    width: 100%;
+    max-width: 300px;
+    span {
+        text-align: center;
+        font-family: "Inter", sans-serif;
+        color: rgb(225, 211, 211);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.icon {
+    color: #fff;
+}
+
+.logo.dark {
+    display: block;
+}
+
+.logo.light {
+    display: none;
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    span {
+        display: inline-block;
+        position: relative;
+        color: #fff;
+        font-size: clamp(1.5rem, 5vw, 4rem);
+        font-family: "Bebas Neue", cursive;
+    }
+    .lds-ellipsis {
+        display: inline-block;
+        position: relative;
+        width: 80px;
+        height: 45px;
+        bottom: 0;
+        div {
+            position: absolute;
+            top: 33px;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: #fff;
+            animation-timing-function: cubic-bezier(0, 1, 1, 0);
+        }
+    }
+}
+
+.lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+
+.go3958317564 {
+    font-family: "Inter", sans-serif;
+}
