@@ -21,5 +21,3 @@ dozens of images of all types, classifying them by voice.
 * [ParticlesJS](https://vincentgarreau.com/particles.js/) - Cool library with amazing effects
 
 ### Coded by FernandoFeN.
-
-Translated with www.DeepL.com/Translator (free version)
