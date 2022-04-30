@@ -15,7 +15,7 @@ dozens of images of all types, classifying them by voice.
 * [Tensorflow](https://www.tensorflow.org) - IA mobilenet library
 * [SASS](https://sass-lang.com) - Css with super powers 🤓
 * [Pusher](https://pusher.com) - Real time functions
-* [MongoDB Atlas](https://www.mongodb.com/es/atlas/database) - Out beauty database 🤓
+* [MongoDB Atlas](https://www.mongodb.com/es/atlas/database) - Our beautiful database 🤓
 * [Cloudinary](https://cloudinary.com) - Our image store 🤓
 * [Google Translator](https://www.npmjs.com/package/googletrans) - Our translation api
 * [ParticlesJS](https://vincentgarreau.com/particles.js/) - Cool library with amazing effects
